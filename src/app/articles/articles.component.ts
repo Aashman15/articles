@@ -9,7 +9,7 @@ import {Writer} from '../writers/model/Writer';
 })
 export class ArticlesComponent implements OnInit {
 
-  writer: Writer = new Writer(1, 'Aashman');
+  writer: Writer = new Writer(1, 'Aashman', 'https://broadwayinfosys.com/uploads/successgallery/1583136231.png');
 
   articles: Article[] = [new Article(1, 'Introduction', 'My name is Aashman Thing.', this.writer),
     new Article(1, 'Introduction', 'My name is Aashman Thing.', this.writer),

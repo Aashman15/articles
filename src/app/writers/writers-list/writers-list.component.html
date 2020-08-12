@@ -1,0 +1,7 @@
+<br>
+<a href="#" style="color: black;">Switch to followed.</a>
+<div *ngFor="let writer of writers">
+  <hr>
+  <a href="#" (click)="selectWriter(writer)">{{ writer.name }}</a>
+  <button style="float: right;">Follow</button>
+</div>
