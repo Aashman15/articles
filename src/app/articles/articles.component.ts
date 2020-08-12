@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Article} from './model/Article';
-import {Writer} from '../writters/model/Writer';
+import {Writer} from '../writers/model/Writer';
 
 @Component({
   selector: 'app-articles',

@@ -1,4 +1,4 @@
-import {Writer} from '../../writters/model/Writer';
+import {Writer} from '../../writers/model/Writer';
 
 export class Article {
   public id: number;

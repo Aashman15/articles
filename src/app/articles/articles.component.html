@@ -1,6 +1,9 @@
-<div *ngFor="let article of articles">
+<div *ngFor="let article of articles" style="width: 50%;">
   <hr>
-  <h5> {{ article.writer.name }}</h5>
+  <p><a href="#">{{ article.writer.name }}</a></p>
   <h3>{{ article.title }}</h3>
   <p>{{ article.body }}</p>
+  <a href="#" style="color: lawngreen; font-size: 13px;">Like</a>
+  &nbsp;
+  <a href="#" style="color:darkred;font-size: 13px;">Dislike</a>
 </div>

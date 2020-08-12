@@ -4,14 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ArticlesComponent } from './articles/articles.component';
-import { WrittersComponent } from './writters/writters.component';
+import { WritersComponent } from './writers/writers.component';
+import { NotificationComponent } from './notification/notification.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ArticlesComponent,
-    WrittersComponent
+    WritersComponent,
+    NotificationComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule
