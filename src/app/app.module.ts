@@ -7,6 +7,8 @@ import { ArticlesComponent } from './articles/articles.component';
 import { WritersComponent } from './writers/writers.component';
 import { NotificationComponent } from './notification/notification.component';
 import { AccountComponent } from './account/account.component';
+import { WriterDetailsComponent } from './writers/writer-details/writer-details.component';
+import { WritersListComponent } from './writers/writers-list/writers-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AccountComponent } from './account/account.component';
     ArticlesComponent,
     WritersComponent,
     NotificationComponent,
-    AccountComponent
+    AccountComponent,
+    WriterDetailsComponent,
+    WritersListComponent
   ],
   imports: [
     BrowserModule

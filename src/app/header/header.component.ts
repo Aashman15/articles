@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
 
   changeActivePage(page: string) {
     this.activePage = page;
-    this.activePageChanged.emit(page);
+    this.activePageChanged.emit(this.activePage);
   }
 
 }

@@ -1,12 +1,12 @@
 <div class="row">
+  <div class="col-sm-3">
+    <app-writers-list (writerSelected)="selectedWriter = $event"></app-writers-list>
+  </div>
   <div class="col">
-    <br>
-    <a href="#" style="color: black;">Switch to followed.</a>
-    <div *ngFor="let writer of writers" style="width: 50%">
-      <hr>
-      <a href="#">{{ writer.name }}</a>
-      <button>Follow</button>
-    </div>
+    <app-writer-details *ngIf="selectedWriter; else ifWriterIsNotSelected" [writer]="selectedWriter"></app-writer-details>
+    <ng-template #ifWriterIsNotSelected>
+      <p>Select an writer to see his/her details.</p>
+    </ng-template>
   </div>
 </div>
 

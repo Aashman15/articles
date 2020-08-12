@@ -7,9 +7,7 @@ import {Writer} from './model/Writer';
   styleUrls: ['./writers.component.css']
 })
 export class WritersComponent implements OnInit {
-  writers: Writer[] = [new Writer(1, 'Aashman Thing'), new Writer(2, 'Aabhas Rai'),
-    new Writer(3, 'Soraj Shrestha')];
-
+  selectedWriter: Writer;
   constructor() {
   }
 

@@ -1,9 +1,9 @@
 <div class="container">
+
   <app-header (activePageChanged)="activePage = $event"></app-header>
-  <div class="align-items-center">
-    <app-articles *ngIf="activePage === 'home'"></app-articles>
-    <app-writers *ngIf="activePage === 'writers'"></app-writers>
-    <app-notification *ngIf="activePage === 'notification'"></app-notification>
-    <app-account *ngIf="activePage === 'account'"></app-account>
-  </div>
+
+  <app-articles *ngIf="activePage === 'home'"></app-articles>
+  <app-writers *ngIf="activePage === 'writers'"></app-writers>
+  <app-notification *ngIf="activePage === 'notification'"></app-notification>
+  <app-account *ngIf="activePage === 'account'"></app-account>
 </div>
